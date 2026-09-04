@@ -1,0 +1,6 @@
+{
+  "name": "Happy Teachers' Day",
+  "description": "An interactive, animated greeting card for Teachers' Day.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

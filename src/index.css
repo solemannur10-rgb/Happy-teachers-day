@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", sans-serif;
+  --font-script: "Caveat", cursive;
+  --font-body: "Quicksand", sans-serif;
+  
+  --color-pastel-bg: #fff0f3;
+  --color-pastel-pink: #ffb6c1;
+  --color-pastel-peach: #ffd8c4;
+  --color-pastel-lavender: #e6c4ff;
+  --color-pastel-yellow: #fff3c4;
+  --color-pastel-green: #d4f0d4;
+  --color-charcoal: #374151;
+}
+
+@layer utilities {
+  .text-stroke-charcoal {
+    -webkit-text-stroke: 2.5px var(--color-charcoal);
+    paint-order: stroke fill;
+  }
+  .text-stroke-sm {
+    -webkit-text-stroke: 1.5px var(--color-charcoal);
+    paint-order: stroke fill;
+  }
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center center;
+  }
+  .card-shadow {
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15), 0 0 20px rgba(255,182,193,0.3);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-pastel-bg);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
